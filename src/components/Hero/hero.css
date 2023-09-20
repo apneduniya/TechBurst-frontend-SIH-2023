@@ -48,8 +48,13 @@
     -o-user-select: none;
     user-select: none;
 
+    @media (max-width: 900px) {
+        width: 300px;
+        height: 284px;
+    }
+
     @media (max-width: 768px) {
-        display: none;
+        display: none !important;
     }
 }
 

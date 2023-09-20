@@ -102,7 +102,7 @@ const MenuItem = (data) => {
 const Items = [
     { id: "0", text: "How It Works", link: "/", icon: IconQuestionMark },
     { id: "1", text: "Explore", link: "/explore", icon: IconGlobe },
-    { id: "2", text: "Find Work", link: "/find-work", icon: IconSearch },
+    { id: "2", text: "Find Work", link: "/register?type=service_provider", icon: IconSearch },
 ];
 
 
@@ -158,7 +158,7 @@ const Navbar = (props) => {
             {Items.map((item) => (
                 <MenuItem id={item.id} key={item.id} text={item.text} link={item.link} icon={item.icon} toggle={() => setIsOpen()} />
             ))}
-            <Link to="/hire-now" style={{ textDecoration: "none", margin: 0, padding: 0 }}>
+            <Link to="/register?type=hire" scroll={false} className="navToggleLink" onClick={() => setIsOpen()}>
                 <motion.button
                     className="navbar-contact-button"
                     style={{ color: "#ffffff", margin: "auto", marginTop: 7, marginLeft: 120, padding: "12px 44px", fontSize: "1.1em", backgroundColor: "#2938aa", border: "0 solid transparent", cursor: "pointer", borderRadius: 10, boxShadow: "0px 5px 30px rgba(65, 84, 241, 0.4)", userSelect: "none", width: "max-content" }}
@@ -246,7 +246,7 @@ const Navbar = (props) => {
                             <li><Link key={item.id} to={item.link} className="navLinks">{item.text}</Link></li>
                         ))
                     }
-                    <Link to="/hire-now" style={{ textDecoration: "none", margin: 0, padding: 0 }}>
+                    <Link to="/register?type=hire" style={{ textDecoration: "none", margin: 0, padding: 0 }}>
                         <motion.button
                             className="navbar-contact-button"
                             style={{ color: "#ffffff", margin: "auto", marginTop: 7, marginLeft: 120, padding: "12px 44px", fontSize: "1.1em", backgroundColor: "#2938aa", border: "0 solid transparent", cursor: "pointer", borderRadius: 10, boxShadow: "0px 5px 30px rgba(65, 84, 241, 0.4)", userSelect: "none", width: "max-content" }}

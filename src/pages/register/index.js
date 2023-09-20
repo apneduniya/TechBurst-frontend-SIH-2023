@@ -15,6 +15,7 @@ const Register = () => {
     const [loading, setLoading] = useState(false);
     const [loadingVisible, { open: startLoading, close: stopLoading }] = useDisclosure(false); // For displaying loading overlay
     const userData = useContext(authContext);
+    const userType = new URLSearchParams(window.location.search).get('type');
 
     const form = useForm({
         initialValues: {
@@ -24,7 +25,7 @@ const Register = () => {
             // profile_pic: null,
             password: '',
             confirm_password: '',
-            role: 'hire',
+            role: userType ? userType : 'hire',
             // pan_number: '',
             // pan_card_pic: null,
             // aadhar_number: '',
