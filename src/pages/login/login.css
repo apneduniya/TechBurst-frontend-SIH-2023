@@ -1,0 +1,60 @@
+.loginContainer {
+    margin: 50px 0;
+    padding: 0 20px;
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginHeading {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.loginDescription {
+    margin: 10px 0;
+    padding: 0;
+    color: gray;
+    font-size: .8em;
+}
+
+.loginFormEmail,
+.loginFormPassword {
+    color: var(--theme-color);
+}
+
+.loginFormSubmitButton {
+    margin: 40px 0;
+    height: 50px;
+    /* width: 300px; */
+    background-color: var(--theme-color);
+    border-radius: 10px;
+}
+
+.loginFormSubmitButton:hover {
+    background-color: var(--theme-color);
+    filter: brightness(90%);
+}
+
+.loginForgotPasswordContainer {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginSignUpLink, .loginFormLabel {
+    margin: 0;
+    padding: 0;
+    font-size: .8em;
+    color: var(--theme-color);
+    font-weight: bold;
+}

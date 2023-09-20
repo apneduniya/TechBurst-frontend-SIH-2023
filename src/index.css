@@ -1,0 +1,66 @@
+/* 
+
+Using Font Faces for loading ttf files for CSS because in production the google fonts css @import link does not load on first
+ so it doesn't get the css fonts, So we r using this to import the css via ttf files... 
+
+*/
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand.ttf');
+  src: url('./assets/fonts/Quicksand.ttf') format('embedded-opentype'),
+    url('./assets/fonts/Quicksand.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Tilt Neon';
+  src: url('./assets/fonts/TiltNeon.ttf');
+  src: url('./assets/fonts/TiltNeon.ttf') format('embedded-opentype'),
+    url('./assets/fonts/TiltNeon.ttf') format('truetype'),
+}
+
+:root {
+  --theme-color: #2938aa;
+}
+
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+
+  font-family: 'QuickSand', sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
+  --sb-track-color: transparent;
+  /* --sb-thumb-color: #85144B; */
+  --sb-size: 4px;
+
+  scrollbar-color: var(--theme-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--theme-color);
+  border-radius: 10px;
+}

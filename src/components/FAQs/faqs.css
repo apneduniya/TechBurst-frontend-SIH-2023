@@ -1,0 +1,18 @@
+
+
+.homeFAQsWrapper {
+    padding-top: calc(20px * 2);
+    padding-bottom: calc(20px * 2);
+    min-height: 650px;
+}
+
+.homeFAQsTitle {
+    margin-bottom: calc(20px * 1.5);
+}
+
+.homeFAQsItem {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+}
+

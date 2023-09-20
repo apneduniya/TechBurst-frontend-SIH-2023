@@ -1,0 +1,64 @@
+.registerContainer {
+    margin: 50px 0;
+    padding: 0 20px;
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerHeading {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.registerDescription {
+    margin: 10px 0;
+    padding: 0;
+    color: gray;
+    font-size: .8em;
+}
+
+.registerForm {
+    color: var(--theme-color);
+}
+
+.registerFormSubmitButton {
+    margin: 40px 0;
+    height: 50px;
+    /* width: 300px; */
+    background-color: var(--theme-color);
+    border-radius: 10px;
+}
+
+.registerFormSubmitButton:hover {
+    background-color: var(--theme-color);
+    filter: brightness(90%);
+}
+
+.registerForgotPasswordContainer {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.registerSignUpLink,
+.registerTermsOfServicesLink,
+.registerPrivacyPolicyLink,
+.registerFormLabel {
+    margin: 0;
+    padding: 0;
+    font-size: .8em;
+    color: var(--theme-color);
+    font-weight: bold;
+}
